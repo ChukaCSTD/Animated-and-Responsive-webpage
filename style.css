@@ -925,6 +925,15 @@ footer ul{
         background-size: contain;
         width: 1344px;
     }
+    .text_overlay button {
+        width: 200px;
+        font-size: 1.7rem
+    }
+    .btn{
+        width: 200px;
+        margin-top: 20px;
+        font-size: 1.7rem
+    }
     .grid{
         grid-template-columns: 1fr;
         height: 115rem;
@@ -1004,7 +1013,7 @@ footer ul{
         width: 95%;
     }
     .grid-3-items{
-        height: 990px;
+        height: 67rem;
     }
     .grid-3-text-holder h1{
         font-size: 3rem;
