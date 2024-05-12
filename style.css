@@ -703,9 +703,22 @@ footer ul{
     gap: 30px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:426px) and (max-width:768px) {
+    body{
+        width: 115%;
+    }
     .navigation{
-        width: 100px;
+        width: 270%;
+    }
+    .logo{
+        width: 70vh;
+        height: 6vh;
+    }
+    .logo img{
+        height: 8vh;
+    }
+    .nav_menu, .icons, .options_menu{
+        display: none;
     }
     .hero{
         height: 400px;
@@ -717,23 +730,64 @@ footer ul{
     .grid{
         grid-template-columns: 1fr 1fr;
     }
+    .grid-items {
+        height: 55rem;
+    }
+
     .grid-2{
         grid-template-columns: 1fr;
     }
+
+    .items {
+        height: 75rem;
+        margin-bottom: 60px;
+    }
+
+    .item-img-1, .item-img-2,
+    .item-img-3, .item-img-4,
+    .item-img-5, .item-img-6,
+    .item-img-7, .item-img-8,
+    .item-img-9, .item-img-10,
+    .item-img-11, .item-img-12,
+    .item-img-13, .item-img-14,
+    .item-img-15, .item-img-16,
+    .item-img-17, .item-img-18,
+    .item-img-19, .item-img-20,
+    .item-img-21, .item-img-22{
+        height: 70rem;
+    }
+
+    .items-list ul {
+        padding: 0;
+    }
+
+    .items-list li{
+        height: 6rem;
+        padding-top: 50px;
+    }
+
+
     .section{
         grid-template-columns: 1fr 1fr;
         margin: auto;
         width: 95%;
     }
+
     .grid-3{
         grid-template-columns: 1fr 1fr;
         width: 95%;
+    }
+    .grid-3-items{
+        height: 990px;
+    }
+    .img-holder {
+        height: 50rem;
     }
 }
 
 @media screen and (min-width:320px) and (max-width:425px) {
     body{
-        width: 378%;
+        width: 380%;
     }
     .navigation{
         width: 270%;
