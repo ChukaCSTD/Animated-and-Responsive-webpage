@@ -692,7 +692,8 @@ footer ul{
     height: auto;
 }
 .bottom_footer{
-    padding: 10px 160px;
+    margin-left: 10px;
+    padding: 20px 130px;
     display: flex;
     justify-content: space-between;
 }
@@ -701,9 +702,10 @@ footer ul{
     width: 300px;
     display: flex;
     gap: 30px;
+    margin: 0;
 }
 
-@media screen and (max-width:426px) and (max-width:768px) {
+@media screen and (min-width:426px) and (max-width:768px) {
     body{
         width: 115%;
     }
@@ -792,7 +794,6 @@ footer ul{
     }
     .navigation{
         width: auto;
-        /* display: none; */
     }
     .logo{
         width: 70vh;
@@ -806,12 +807,14 @@ footer ul{
     }
     .hero{
         height: 770px;
-        width: 100%;
+        width: auto;
+        overflow-x: hidden;
       }
     .hero-img{
         height: 770px;
         background-position: right;
-        background-size: cover;
+        background-size: contain;
+        width: 1344px;
     }
     .grid{
         grid-template-columns: 1fr;
