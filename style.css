@@ -788,9 +788,11 @@ footer ul{
 @media screen and (min-width:320px) and (max-width:425px) {
     body{
         width: 380%;
+        overflow-x: hidden;
     }
     .navigation{
-        width: 83%;
+        width: auto;
+        /* display: none; */
     }
     .logo{
         width: 70vh;
