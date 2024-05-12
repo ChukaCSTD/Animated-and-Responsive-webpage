@@ -215,10 +215,11 @@ body{
 .price{
     height: 60px;
     width: 90%;
+    padding: 0 0 0 15px;
     /* background-color: purple; */
     position: absolute;
     top: 20px;
-    left: 15px;
+    /* left: 10px; */
     z-index: 10;    
     display: flex;
     justify-content: space-between;
@@ -705,12 +706,91 @@ footer ul{
     margin: 0;
 }
 
-@media screen and (min-width:426px) and (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:1024px){
     body{
-        width: 115%;
+        width: 100%;
+    }
+    .icons ul{
+        width: 130px;
+    }
+    .hero{
+        height: auto;
+        width: 100%;
+    }
+    .bg1, .bg2, .bg3{
+        background-size: contain;
+    }
+    .grid-items{
+        height: 160px;
+    }
+    .items-list ul{
+        padding: 0;
+    }
+    .items-list li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+    }
+
+    .item-img-1, .item-img-2,
+    .item-img-3, .item-img-4,
+    .item-img-5, .item-img-6,
+    .item-img-7, .item-img-8,
+    .item-img-9, .item-img-10,
+    .item-img-11, .item-img-12,
+    .item-img-13, .item-img-14,
+    .item-img-15, .item-img-16,
+    .item-img-17, .item-img-18,
+    .item-img-19, .item-img-20,
+    .item-img-21, .item-img-22{
+        height: 15rem;
+    }
+    .items{
+        height: 330px;
+    }
+    .bg-red, .bg-black{
+        height: 35px;
+        width: 35px;
+    }
+    .section{
+        height: 220px;
+    }
+    .cta_container{
+        height: 450px;
+        margin-bottom: 80px;
+    }
+    .grid-3{
+        width: 90%;
+    }
+    .myfoot{
+        grid-template-columns: auto auto;
+        padding: 50px 100px;
+    }
+    .bottom_footer{
+        gap: 10px;
+        padding: 10px 80px;
+        margin-left: 1px;
+    }
+    .clam_chowder ul {
+        gap: 20px;
+        width: auto;
+        text-align: right;
+    }
+    .counter{
+        top: 25px;
+        right: 65px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    body{
+        width: 960px;
+        overflow-x: hidden;
     }
     .navigation{
-        width: 270%;
+        width: auto;
     }
     .logo{
         width: 70vh;
@@ -723,25 +803,32 @@ footer ul{
         display: none;
     }
     .hero{
-        height: 400px;
+        height: 600px;
+        overflow: hidden;
     }
     .hero-img{
-        height: 400px;
+        height: 600px;
+        width: 1100px;
         background-position: right;
     }
-    .grid{
-        grid-template-columns: 1fr 1fr;
-    }
-    .grid-items {
-        height: 55rem;
+    .text_overlay{
+        padding: 0;
     }
 
-    .grid-2{
+    .grid{
         grid-template-columns: 1fr;
+    }
+    .grid-items{
+        height: 500px;
+    }
+    
+
+    .grid-2{
+        grid-template-columns: 1fr 1fr;
     }
 
     .items {
-        height: 75rem;
+        height: 34rem;
         margin-bottom: 60px;
     }
 
@@ -756,38 +843,60 @@ footer ul{
     .item-img-17, .item-img-18,
     .item-img-19, .item-img-20,
     .item-img-21, .item-img-22{
-        height: 70rem;
+        height: 30rem;
     }
 
-    .items-list ul {
+    .items-list ul{
         padding: 0;
+        margin: auto;
+    }
+
+    .items-list ul li{
+        padding: 0;
+        /* height: 4rem; */
     }
 
     .items-list li{
-        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
         padding-top: 50px;
     }
 
 
     .section{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: auto;
-        width: 95%;
+        width: auto;
+        height: 870px;
+        gap: 15px;
+    }
+    .des{
+        right: 50px;
     }
 
     .grid-3{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 95%;
+        margin: auto;
     }
     .grid-3-items{
-        height: 990px;
+        height: 740px;
     }
     .img-holder {
-        height: 50rem;
+        height: 35rem;
+    }
+    .cta_container{
+        height: 500px;
+    }
+    .myfoot{
+        grid-template-columns: auto auto;
     }
 }
 
-@media screen and (min-width:320px) and (max-width:425px) {
+@media screen and (min-width:50px) and (max-width:425px) {
     body{
         width: 380%;
         overflow-x: hidden;
@@ -800,7 +909,7 @@ footer ul{
         height: 6vh;
     }
     .logo img{
-        height: 8vh;
+        height: 15vh;
     }
     .nav_menu, .icons, .options_menu{
         display: none;
@@ -818,18 +927,24 @@ footer ul{
     }
     .grid{
         grid-template-columns: 1fr;
+        height: 115rem;
     }
     .grid-items {
-        height: 55rem;
+        height: 36rem;
     }
-
+    .text h2{
+        font-size: 5rem;
+    }
+    .text{
+        font-size: 3rem;
+    }
     .grid-2{
         grid-template-columns: 1fr;
-        margin: 20px 140px;
+        margin: 80px 140px 0 140px;
     }
     .items {
-        height: 75rem;
-        margin-bottom: 60px;
+        height: 72rem;
+        margin-bottom: 80px;
     }
 
     .item-img-1, .item-img-2,
@@ -843,23 +958,47 @@ footer ul{
     .item-img-17, .item-img-18,
     .item-img-19, .item-img-20,
     .item-img-21, .item-img-22{
-        height: 70rem;
+        height: 60rem;
+    }
+
+    .p1{
+        font-size: 3rem;
+    }
+    .p2{
+        font-size: 5rem;
     }
 
     .items-list ul {
         padding: 0;
     }
 
-    .items-list li{
+    .items-list ul li{
         height: 6rem;
         padding-top: 50px;
+        font-size: 3rem;
     }
-
+    .text-holder h2{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .text-holder p{
+        font-size: 3rem;
+    }
+    .feature .p1{
+        font-size: 4rem;
+    }
     .section{
     display: none;
     }
-   
-
+    .price{
+        padding: 0 0 0 50px;
+        top: 40px;
+    }   
+    .bg-black, .bg-red{
+        height: 110px;
+        width: 110px ;
+        font-size: 2rem;
+    }
     .grid-3{
         grid-template-columns: 1fr;
         width: 95%;
@@ -867,7 +1006,26 @@ footer ul{
     .grid-3-items{
         height: 990px;
     }
+    .grid-3-text-holder h1{
+        font-size: 3rem;
+    }
+    .grid-3-text-holder p{
+        font-size: 2rem;
+    }
     .img-holder {
         height: 50rem;
+    }
+    .cta_container{
+        height: 70rem;
+    }
+    .cta_img{
+        height: 200px;
+        width: 200px;
+    }
+    .cta_container p, h4, span{
+        font-size: 2rem;
+    }
+    .quotes img{
+        height: 4rem;
     }
 }
